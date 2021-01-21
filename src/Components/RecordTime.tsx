@@ -38,7 +38,7 @@ function RecordTime() {
 
     
     function _onChange(ev: React.FormEvent<HTMLInputElement>, option: IChoiceGroupOption): void {
-    setData({...data, key:option});
+    setData({...data, key : option.key});
       }
  
      
