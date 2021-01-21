@@ -6,7 +6,7 @@ const links = [
     links: [
       {
         name: 'Home',
-        url: '/', 
+        url: '#/', 
         key: 'key1',
         iconProps: {
           iconName: 'Home',
@@ -20,7 +20,7 @@ const links = [
       },
       {
         name: 'Tasks',
-        url: '/task',
+        url: '#/task',
         key: 'key1',
         iconProps: {
           iconName: 'TaskManager',
@@ -34,7 +34,7 @@ const links = [
       },
       {
         name: 'Contacts',
-        url: '/contact',
+        url: '#/contact',
         key: 'key1',
         iconProps: {
           iconName: 'ContactList',
@@ -56,8 +56,7 @@ const navigationStyles = {
     boxSizing: 'border-box',
     border: '1px solid #eee',
     overflowY: 'visable', 
-    
-    
+    width: '100%'
   }
 }
 
@@ -66,7 +65,7 @@ const NavBar1 = (props) => {
 
   return (
   
-      <div className="ms-Grid-row"  style={{display:'flex', flexDirection:"column", position:"relative", bottom:"-82vh"}}>
+      <div className="ms-Grid-row">
     <Nav
     groups={links}
     selectedKey="key1"
