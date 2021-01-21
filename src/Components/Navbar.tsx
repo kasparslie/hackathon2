@@ -6,7 +6,7 @@ const links = [
     links: [
       {
         name: 'Home',
-        url: '/',
+        url: '/', 
         key: 'key1',
         iconProps: {
           iconName: 'Home',
@@ -52,11 +52,12 @@ const links = [
 
 const navigationStyles = {
   root: {
-    height: '10vh',
+    height: '5vh',
     boxSizing: 'border-box',
     border: '1px solid #eee',
     overflowY: 'visable', 
-    marginBottom:'5vh'   
+    
+    
   }
 }
 
@@ -64,14 +65,15 @@ const NavBar1 = (props) => {
   initializeIcons();
 
   return (
-    <div className="ms-Grid-col" dir="ltr">
+  
+      <div className="ms-Grid-row"  style={{display:'flex', flexDirection:"column", position:"relative", bottom:"-82vh"}}>
     <Nav
     groups={links}
     selectedKey="key1"
     styles={navigationStyles}/>
     </div>
+   
 
-    
 
 
   );

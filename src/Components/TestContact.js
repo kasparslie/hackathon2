@@ -3,7 +3,7 @@
 function TestContact() {
     return (
   <div>
-      <p>Contact</p>
+      <p style={{textAlign: 'center'}}>Contact</p>
   </div>    
     );
   }

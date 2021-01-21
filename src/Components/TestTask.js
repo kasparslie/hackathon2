@@ -3,7 +3,7 @@
 function TestTask() {
     return (
       <div>
-          <p>Task</p>
+          <p style={{textAlign: 'center'}}>Task</p>
       
       </div>
   

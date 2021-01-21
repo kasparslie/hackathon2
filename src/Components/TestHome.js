@@ -3,7 +3,7 @@
 function TestHome() {
     return (
   <div>
-  <p> Home </p>
+  <p style={{textAlign: 'center'}}> Home </p>
   </div>
     );
   }
