@@ -56,7 +56,8 @@ const navigationStyles = {
     boxSizing: 'border-box',
     border: '1px solid #eee',
     overflowY: 'visable', 
-    width: '100%'
+    width: '100%',
+    marginBottom: '12vh'
   }
 }
 
