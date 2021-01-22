@@ -4,8 +4,7 @@ import {
     HashRouter
 } from "react-router-dom";
 import NavBar1 from "./Navbar";
-import TestTask from "./TestTask";
-import TestContact from "./TestContact";
+import Contact from "./Contact";
 import TestHome from "./TestHome";
 
 import {CreateTask} from "./CreateTask";
@@ -19,7 +18,7 @@ function Routerfunc() {
             <NavBar1/>
             <Switch>
             <Route exact path="/record" component={RecordTimer} />
-            <Route exact path="/contact" component={TestContact} />
+            <Route exact path="/contact" component={Contact} />
             <Route exact path="/addtask" component={AddTask} />
             <Route exact path="/task" component={CreateTask} />
             <Route exact path="/" component={TestHome} />

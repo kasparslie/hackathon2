@@ -14,12 +14,12 @@ const Performer = [
   ];
   
 const Client = [
-  { key: 'clientHeader', text: 'Performer', itemType: DropdownMenuItemType.Header },
-  { key: 'regina_drup', text: 'Regina Drup' },
-  { key: 'simon_strand', text: 'Simon Strand' },
-  { key: 'test_account', text: 'Test Account' },
-  { key: 'piet_palmboom', text: 'Piet Palmboom' },
-  { key: 'peter_parasol', text: 'Peter Parasol' },  
+  { key: 'clientHeader', text: 'Client', itemType: DropdownMenuItemType.Header },
+  { key: 'Potato', text: 'Potato' },
+  { key: 'Orange', text: 'Orange' },
+  { key: 'Smelly', text: 'Smelly' },
+  { key: 'Crown', text: 'Crown' },
+  { key: 'Queen', text: 'Queen' },  
 ];
 
 const Status = [
@@ -44,7 +44,7 @@ const Status = [
     return (
       <>
       <Dropdown
-        placeholder="Regina Drup..."
+        placeholder="Performer..."
         label="Performer"
         selectedKeys={selectedKeys}
         // eslint-disable-next-line react/jsx-no-bind
@@ -55,7 +55,7 @@ const Status = [
       />
   
       <Dropdown
-        placeholder="Test Account"
+        placeholder="Client..."
         label="Client"
         selectedKeys={selectedKeys}
         // eslint-disable-next-line react/jsx-no-bind
