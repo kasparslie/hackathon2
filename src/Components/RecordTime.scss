@@ -1,0 +1,66 @@
+@media only screen and (max-width: 700px) {
+    body{
+      background-color: white;
+      width: 320px;
+    }
+    .main {
+        display: flex;
+        width: 320px;
+    }.f1 {
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-bottom: 5px;
+    }
+    .f1a {
+        margin-top: 180px;
+    }
+.f2 {
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 5px;
+}
+    #descrpition {
+        width: 300px;
+        height: 200px;
+        box-sizing: border-box;
+        border: 2px solid black;
+        border-radius: 4px;
+        background-color: #f8f8f8;
+        resize: none;
+        text-align: center;
+    }
+    #file {
+        width: 200%;
+        height: 30px;
+        box-sizing: border-box;
+        border: 2px solid black;
+        border-radius: 4px;
+        background-color: #f8f8f8;
+        resize: none;
+        text-align: center;
+        color: blue;
+        font-size: 14px;
+    }
+    .f2 {
+        display: flex;
+        margin-top: 10px;
+    }
+    .f2 input {
+        width: 80px;
+        height: 30px;
+        box-sizing: border-box;
+        border: 2px solid black;
+        border-radius: 4px;
+        background-color: #f8f8f8;
+        resize: none;
+        margin-right: 10px;
+        margin-left: 10px;
+        text-align: center;
+        color: blue;
+        font-size: 14px;
+    }
+
+
+  }
