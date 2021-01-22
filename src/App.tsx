@@ -6,7 +6,6 @@ import Routerfunc from './Components/rounterfunc';
 function App() {
   return (
 <div>
-<RecordTime/>
  <Routerfunc />
 </div>    
   );

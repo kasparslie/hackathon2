@@ -48,27 +48,28 @@ function RecordTime() {
      
     return(
     <div className="main">
+      <h3 style={{textAlign:'center'}}>Record Working Hours</h3>
    <form onSubmit={postData}>
      <div className="f1">
    <TextField placeholder="descrpition" type="text" id="descrpition" value={data.descrpition} 
-   onChange={(e, value) => setData({ ...data, descrpition: value })}></TextField>
+   onChange={(e, value) => setData({ ...data, descrpition: value })}></TextField> <br></br>
     <div className="f1a">
       <TextField placeholder="file" type="text" id="file" value={data.fileId} 
-   onChange={(e, value) => setData({ ...data, fileId: value })}></TextField>
+   onChange={(e, value) => setData({ ...data, fileId: value })}></TextField> <br></br>
      </div>
      </div> 
      <div className="f2">
       <TextField placeholder="time" type="text" id="time" value={data.duration} 
-   onChange={(e, value) => setData({ ...data, duration: value })}></TextField>
+   onChange={(e, value) => setData({ ...data, duration: value })}></TextField> <br></br>
          <TextField placeholder="rate" type="number" id="rate" value={data.rate} 
-   onChange={(e, value) => setData({ ...data, rate: value })}></TextField>
+   onChange={(e, value) => setData({ ...data, rate: value })}></TextField> <br></br>
            <TextField placeholder="revenue" type="number" id="revenue" readOnly value={data.revenue} 
-   onChange={(e, value) => setData({ ...data, revenue: value })}></TextField>
+   onChange={(e, value) => setData({ ...data, revenue: value })}></TextField> <br></br>
    </div>
          <TextField placeholder="performer" type="text" id="performer" value={data.ownerId} 
-   onChange={(e, value) => setData({ ...data, ownerId: value })}></TextField>
+   onChange={(e, value) => setData({ ...data, ownerId: value })}></TextField> <br></br>
               <TextField placeholder="dd-mm-yyyy" type="date" id="date" value={data.date} 
-   onChange={(e, value) => setData({ ...data, date: value })}></TextField>
+   onChange={(e, value) => setData({ ...data, date: value })}></TextField> <br></br>
      <div className="f3">
      <ChoiceGroup defaultSelectedKey="B" options={options} label="Pick one" required={true}
      onChange={_onChange}
