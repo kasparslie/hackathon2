@@ -5,6 +5,7 @@ import axios from 'axios';
 import "./RecordTime.css"
 
 
+
 function RecordTime() {
     const[total, setTotal] = useState()
     const [data, setData] = useState({
@@ -35,6 +36,7 @@ function RecordTime() {
     //      const rate=parseInt(data.rate)
     //      const time=parseInt(data.time)
     //     let totalVal=(rate*time)
+
        //   setTotal(totalVal)
     //   }
 
@@ -56,6 +58,12 @@ function RecordTime() {
    </div>
    </div>
    <div className="f2">
+    <div style={{paddingTop:"120px"}}>
+   <form onSubmit={postData}>
+   <TextField placeholder="descrpition" type="text" id="descrpition" value={data.descrpition} 
+   onChange={(e, value) => setData({ ...data, descrpition: value })}></TextField>
+      <TextField placeholder="file" type="text" id="file" value={data.file} 
+   onChange={(e, value) => setData({ ...data, file: value })}></TextField>
       <TextField placeholder="time" type="text" id="time" value={data.time} 
    onChange={(e, value) => setData({ ...data, time: value })}></TextField>
          <TextField placeholder="rate" type="number" id="rate" value={data.rate} 
@@ -73,10 +81,14 @@ function RecordTime() {
     />; 
      {console.log(options)}
 {/* {*{onChange={(e, value) => setData({ ...data, value)} } *} */}
+
  </div>
 <div className="f4">
    <button type="submit">save</button>
 </div>
+
+
+   <button type="submit">save</button>
    </form>
    
 
