@@ -13,7 +13,7 @@ const links = [
           styles:{
             root:{
               fontSize:20,
-              color: '#106ebe'
+              color: '#0099ff'
             }
           }
         }
@@ -27,7 +27,7 @@ const links = [
           styles:{
             root:{
               fontSize:20,
-              color: '#106ebe'
+              color: '#0099ff'
             }
           }
         }
@@ -41,7 +41,7 @@ const links = [
           styles:{
             root:{
               fontSize:20,
-              color: '#106ebe'
+              color: '#0099ff'
             }
           }
         }
@@ -55,7 +55,7 @@ const links = [
           styles:{
             root:{
               fontSize:20,
-              color: '#106ebe'
+              color: '#0099ff'
             }
           }
         }
@@ -69,7 +69,7 @@ const links = [
           styles:{
             root:{
               fontSize:20,
-              color: '#106ebe'
+              color: '#0099ff'
             }
           }
         }
