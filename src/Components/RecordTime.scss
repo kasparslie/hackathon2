@@ -42,7 +42,25 @@
         text-align: center;
         color: blue;
         font-size: 14px;
-    
-
     }
+    .f2 {
+        display: flex;
+        margin-top: 10px;
+    }
+    .f2 input {
+        width: 80px;
+        height: 30px;
+        box-sizing: border-box;
+        border: 2px solid black;
+        border-radius: 4px;
+        background-color: #f8f8f8;
+        resize: none;
+        margin-right: 10px;
+        margin-left: 10px;
+        text-align: center;
+        color: blue;
+        font-size: 14px;
+    }
+
+
   }
