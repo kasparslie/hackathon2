@@ -7,10 +7,8 @@ function App() {
   return (
 <div>
 <RecordTime/>
-</div>
-    <div className="ms-Grid">
-      <Routerfunc />
-    </div>    
+ <Routerfunc />
+</div>    
   );
 }
 

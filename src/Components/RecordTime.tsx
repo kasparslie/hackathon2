@@ -10,20 +10,20 @@ function RecordTime() {
     const[total, setTotal] = useState()
     const [data, setData] = useState({
         descrpition: "",
-        file: "",
-        time: "",
+        fileId: "",
+        duration: "",
         rate: "",
         revenue: "",
-        performer: "",
+        ownerId: "",
         date: "",
-        key: "",
+        billable: "",
       });
       console.log(data)
 
       const postData = (e) => {
         e.preventDefault();
         axios
-          .post(`http://localhost:3002/add`,data)
+          .post(`https://hammock-test.azurewebsites.net/time`,data)
           .catch((err) => console.log(err))
       }
       const options: IChoiceGroupOption[] = [
@@ -42,7 +42,7 @@ function RecordTime() {
 
     
     function _onChange(ev: React.FormEvent<HTMLInputElement>, option: IChoiceGroupOption): void {
-    setData({...data, key : option.key});
+    setData({...data, billable : option.key});
       }
  
      
@@ -53,26 +53,20 @@ function RecordTime() {
    <TextField placeholder="descrpition" type="text" id="descrpition" value={data.descrpition} 
    onChange={(e, value) => setData({ ...data, descrpition: value })}></TextField>
     <div className="f1a">
-      <TextField placeholder="file" type="text" id="file" value={data.file} 
-   onChange={(e, value) => setData({ ...data, file: value })}></TextField>
-   </div>
-   </div>
-   <div className="f2">
-    <div style={{paddingTop:"120px"}}>
-   <form onSubmit={postData}>
-   <TextField placeholder="descrpition" type="text" id="descrpition" value={data.descrpition} 
-   onChange={(e, value) => setData({ ...data, descrpition: value })}></TextField>
-      <TextField placeholder="file" type="text" id="file" value={data.file} 
-   onChange={(e, value) => setData({ ...data, file: value })}></TextField>
-      <TextField placeholder="time" type="text" id="time" value={data.time} 
-   onChange={(e, value) => setData({ ...data, time: value })}></TextField>
+      <TextField placeholder="file" type="text" id="file" value={data.fileId} 
+   onChange={(e, value) => setData({ ...data, fileId: value })}></TextField>
+     </div>
+     </div> 
+     <div className="f2">
+      <TextField placeholder="time" type="text" id="time" value={data.duration} 
+   onChange={(e, value) => setData({ ...data, duration: value })}></TextField>
          <TextField placeholder="rate" type="number" id="rate" value={data.rate} 
    onChange={(e, value) => setData({ ...data, rate: value })}></TextField>
            <TextField placeholder="revenue" type="number" id="revenue" readOnly value={data.revenue} 
    onChange={(e, value) => setData({ ...data, revenue: value })}></TextField>
    </div>
-         <TextField placeholder="performer" type="text" id="performer" value={data.performer} 
-   onChange={(e, value) => setData({ ...data, performer: value })}></TextField>
+         <TextField placeholder="performer" type="text" id="performer" value={data.ownerId} 
+   onChange={(e, value) => setData({ ...data, ownerId: value })}></TextField>
               <TextField placeholder="dd-mm-yyyy" type="date" id="date" value={data.date} 
    onChange={(e, value) => setData({ ...data, date: value })}></TextField>
      <div className="f3">
@@ -86,16 +80,10 @@ function RecordTime() {
 <div className="f4">
    <button type="submit">save</button>
 </div>
-
-
-   <button type="submit">save</button>
    </form>
-   
-
-
     </div>
     )
 
 }
-  export default RecordTime;
+  export default RecordTime
   
